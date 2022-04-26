@@ -8,5 +8,5 @@ Country[] countries = reader.ReadFirstNCountries(10);
 
 foreach (Country country in countries)
 {
-    Console.WriteLine($"{country.Name} :{country.Population}");
+    Console.WriteLine($"{PopulationFormatter.FormatPopulation(country.Population).PadLeft(15)} : {country.Name}");
 }
